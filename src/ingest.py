@@ -18,7 +18,7 @@ def clean_data(text_data: str) -> list[str]:
 
 
 # Ingest data (Main function)
-def ingest(file_path: str) -> list[str]:
+def ingest_data(file_path: str) -> list[str]:
     text_data = read_file(file_path)
     cleaned_data = clean_data(text_data)
 
