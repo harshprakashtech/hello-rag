@@ -4,7 +4,7 @@ from google import genai
 
 
 # Config and initialize AI model (Gemini)
-def init_model():
+def init_client():
     # Load Gemini API key
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 

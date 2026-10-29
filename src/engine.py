@@ -1,13 +1,11 @@
-from config import init_model
+from embed import get_embeddings
 from ingest import ingest_data
 
 
 # Run engine (Main function)
 def run_engine():
-    # Initialize AI model
-    client = init_model()
-
     # Ingest data from file
     data = ingest_data("data/pagepoint_cafe.txt")
 
-    print(data)
+    # Generate embeddings
+    embeddings = get_embeddings(data, model="gemini-embedding-001")
